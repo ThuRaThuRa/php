@@ -10,7 +10,9 @@
 //     'user' =>'controllers/user.php'
 // ]);
   
-$router->get("","controllers/index.php");
-$router->get("product","controllers/product.php");
-$router->get("contact","controllers/contact.php");
-$router->post("users","controllers/user.php");
+$router->get("","PageController@home");
+$router->get("product","PageController@product");
+$router->get("contact","PageController@contact");
+$router->get("about","PageController@about");
+$router->get("users","UserController@index");
+$router->post("users","UserController@store");
