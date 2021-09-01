@@ -3,7 +3,7 @@
 class PageController {
     public function home()
  {
-        $users = App::get('database')->selectAll( 'users' );
+        // $users = App::get('database')->selectAll( 'users' );
         
         // require 'views/index.view.php';
 
