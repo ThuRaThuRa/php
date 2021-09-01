@@ -1,53 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    /* header {
-        background-color: #00000090;
-        color: #fff888;
-        padding: 20px;
-        text-align: center;
-        font-family: "Helvetica Neue", Helvetica, Arial;
-    } */
-    </style>
-</head>
+require "views/partials/header.view.php";
+?>
 
-<body>
-    <ul>
-        <li>
-            <a href="index">Home</a>
-        </li>
-        <li>
-            <a href="product">Product</a>
-        </li>
-        <li>
-            <a href="contact">Contact</a>
-        </li>
-    </ul>
-    <ul>
-        <?php foreach ($tasks as $task):?>
+<?php foreach ($users as $user):?>
+<ul>
+    <li><?=$user->username?></li>
+</ul>
 
-        <li>
-            <?php 
-            if($task->completed){
-                
-                echo "<strike>$task->description</strike>";
-            }else{
+<?php endforeach;?>
+<h1>User Form</h1>
+<form action="users" method="POST">
+    <input type="text" name="username">
+    <button type="submit">Add</button>
+</form>
 
-                echo "$task->description";
-            }
-            
-            ?>
-        </li>
+<?php
 
-        <?php endforeach; ?>
-
-    </ul>
-</body>
-
-</html>
+require "views/partials/footer.view.php";

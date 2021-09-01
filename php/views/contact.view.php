@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <h1>Contact Page</h1>
-</body>
-</html>
+<?php
+    
+    require "views/partials/header.view.php";
+    ?>
+<h1>Contac Page</h1>
+
+<?php
+    
+    require "views/partials/footer.view.php";
+    ?>
