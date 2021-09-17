@@ -1,7 +1,7 @@
 <?php
 
 // $router->define([
-//     ''=>'controllers/index.php',
+//     ''=>'controllers/index.php', 
     
 //     'contact'=>'controllers/contact.php ',
     
@@ -15,4 +15,4 @@ $router->get("product","PageController@product");
 $router->get("contact","PageController@contact");
 $router->get("about","PageController@about");
 $router->get("users","UserController@index");
-$router->post("users","UserController@store");
+$router->post("users","UserController@store");  
